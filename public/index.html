@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Baseline — an interactive celebration of basketball culture, roles, rhythm, and the beauty of the game."
+    />
+    <title>Baseline — Basketball, by feel</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Baseline home">
+        <span class="brand-ball" aria-hidden="true"></span>
+        <span>Baseline</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#language">The game</a>
+        <a href="#roles">Find your role</a>
+        <a href="#challenge">Take a shot</a>
+      </nav>
+      <a class="header-cta" href="#challenge">Play now <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>01</span> More than a game</p>
+          <h1 id="hero-title">The court<br />never lies.</h1>
+          <p class="hero-deck">
+            Five players. One ball. Endless ways to leave your mark.
+            Baseline is a guide for new players and fans: learn to read the floor, find your role, and try a quick shooting challenge.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#challenge">Take the challenge</a>
+            <a class="text-link" href="#language">Explore the game <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Abstract basketball court illustration">
+          <div class="score-tag"><span>HOME</span><strong>24</strong><span>AWAY</span><strong>23</strong></div>
+          <div class="sun"></div>
+          <div class="player-silhouette">
+            <span class="head"></span><span class="body"></span><span class="arm arm-one"></span><span class="arm arm-two"></span>
+          </div>
+          <div class="hero-ball" aria-hidden="true"><i></i><i></i></div>
+          <p class="vertical-copy">READ THE FLOOR. FIND YOUR GAME.</p>
+          <div class="court-lines" aria-hidden="true"><span></span></div>
+        </div>
+
+        <div class="ticker" aria-label="Basketball principles">
+          <span>HUSTLE</span><i>✦</i><span>VISION</span><i>✦</i><span>RHYTHM</span><i>✦</i><span>HEART</span><i>✦</i><span>REPEAT</span>
+        </div>
+      </section>
+
+      <section class="language section-pad" id="language">
+        <div class="section-heading">
+          <p class="eyebrow"><span>02</span> Read the floor</p>
+          <h2>Every possession<br />has a language.</h2>
+        </div>
+        <div class="language-grid">
+          <article class="feature-card feature-card-wide">
+            <div class="diagram half-court" aria-hidden="true">
+              <span class="route route-one"></span><span class="route route-two"></span><span class="route route-three"></span>
+              <b class="dot d1"></b><b class="dot d2"></b><b class="dot d3"></b><b class="dot d4"></b><b class="dot d5"></b>
+            </div>
+            <p class="card-number">01 / VISION</p>
+            <h3>See the play<br />before it opens.</h3>
+            <p>Look up before you receive the ball. Notice who is moving into space and pass where your teammate is going.</p>
+          </article>
+          <article class="feature-card feature-card-orange">
+            <div class="big-stat"><strong>Read.</strong><span>THEN REACT</span></div>
+            <p class="card-number">02 / DECISION</p>
+            <h3>Catch. Read.<br />Move.</h3>
+            <p>On the catch, check the rim, your defender, and an open teammate. Shoot, pass, or drive with purpose.</p>
+          </article>
+          <article class="feature-card feature-card-dark">
+            <div class="pulse" aria-hidden="true"><span></span><span></span><i></i></div>
+            <p class="card-number">03 / RHYTHM</p>
+            <h3>Find the beat.</h3>
+            <p>Practice changing pace with a controlled dribble. Slow down to read your defender, then accelerate into open space.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="roles section-pad" id="roles">
+        <div class="roles-intro">
+          <p class="eyebrow light"><span>03</span> Choose your impact</p>
+          <h2>No two players<br />change the game<br />the same way.</h2>
+          <p>Select a role and discover how you can tilt the floor.</p>
+        </div>
+        <div class="role-explorer">
+          <div class="role-tabs" role="tablist" aria-label="Player roles">
+            <button type="button" id="tab-creator" role="tab" tabindex="0" aria-selected="true" aria-controls="role-panel" data-role="creator">Creator</button>
+            <button type="button" id="tab-shooter" role="tab" tabindex="-1" aria-selected="false" aria-controls="role-panel" data-role="shooter">Shooter</button>
+            <button type="button" id="tab-anchor" role="tab" tabindex="-1" aria-selected="false" aria-controls="role-panel" data-role="anchor">Anchor</button>
+            <button type="button" id="tab-spark" role="tab" tabindex="-1" aria-selected="false" aria-controls="role-panel" data-role="spark">Spark</button>
+          </div>
+          <article class="role-panel" id="role-panel" role="tabpanel" aria-labelledby="tab-creator" tabindex="0">
+            <div class="role-index">01</div>
+            <div>
+              <p class="role-label">THE CREATOR</p>
+              <h3>Turns pressure<br />into possibility.</h3>
+              <p class="role-description">You bend the defense with pace, pull help toward you, and make the right read when the second defender comes.</p>
+              <div class="role-stats">
+                <div><span>Primary tool</span><strong>Vision</strong></div>
+                <div><span>Best zone</span><strong>Top of key</strong></div>
+                <div><span>Mindset</span><strong>One play ahead</strong></div>
+              </div>
+            </div>
+            <div class="role-mark" aria-hidden="true"><span>10</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="challenge section-pad" id="challenge">
+        <div class="challenge-copy">
+          <p class="eyebrow"><span>04</span> Quick hands</p>
+          <h2>Beat the<br />shot clock.</h2>
+          <p>Tap the glowing target, or press Enter or Space while it is focused. Each attempt can score two or three points; three-point attempts have a lower chance of going in. You have 24 seconds.</p>
+          <button class="button button-dark" id="start-game" type="button">Start 24 seconds</button>
+          <button class="button button-stop" id="stop-game" type="button" disabled>End round</button>
+          <p class="best-score">Personal best: <strong id="best-score">0</strong></p>
+        </div>
+        <div class="game-shell">
+          <div class="game-scoreboard">
+            <div><span>SCORE</span><strong id="game-score">00</strong></div>
+            <p id="game-message" role="status" aria-live="polite">READY?</p>
+            <div><span>TIME</span><strong id="game-time">24</strong></div>
+          </div>
+          <div class="game-court" id="game-court" aria-label="Interactive basketball shooting court">
+            <div class="court-key"><span class="rim"></span></div>
+            <div class="three-line"></div>
+            <button class="shot-spot" type="button" aria-label="Take shot" disabled></button>
+            <div class="game-overlay"><strong>BUZZER<br />BEATER</strong><span>PRESS START TO PLAY</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-ball" aria-hidden="true"></div>
+      <p class="footer-kicker">KEEP SHOWING UP</p>
+      <h2>Next play<br />mentality.</h2>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      <p class="footer-note">Built for everyone who hears sneakers squeak and knows exactly what comes next.</p>
+    </footer>
+  </body>
+</html>
