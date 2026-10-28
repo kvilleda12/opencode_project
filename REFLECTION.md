@@ -2,11 +2,12 @@
 
 ## Model and provider
 
-OpenAI Codex (GPT-6-based coding agent), provided by OpenAI. The session identifies the model family; an exact backend model snapshot was not exposed.
+OpenAI Codex
+
 
 ## Useful prompt
 
-“please continue building the website” followed by the assignment's website and repository requirements gave the agent a concrete checklist: meaningful content, a working interaction, responsive and keyboard-accessible controls, a localhost server, a work branch, documentation, and evidence.
+“Be creative with the website deisgn and make sure to adhere to all instruction guidelines. Before showing me the results make sure you have tested and verified the website you created works as intended. If you have any questions or need direction, ask me"
 
 ## Observed tool action
 
@@ -28,8 +29,3 @@ The role explorer reads a JavaScript object for each selected role and updates t
 
 Agent browser checks passed for role click/arrow navigation, Enter-key shooting feedback, countdown, early ending, automatic ending, and responsive page width at 320, 390, 768, and 1280 CSS pixels. The role attributes remained below their description at all four widths. JavaScript syntax was also checked with `node --check public/script.js`.
 
-Student review remains a separate step: open the localhost page, try the controls, inspect narrow and wide layouts, and add your own observations here before submission. This file records agent actions, not a claim that the student has already completed that review. Ensure the instructor can access the private GitHub repository.
-
-## Screenshot limitation
-
-A real Chrome viewport preview is saved at `evidence/site-preview.png`. macOS refused the window capture needed to include the address bar, so the required `evidence/site-localhost.png` still needs to be taken by the student. Instructions are in `evidence/README.md`. The viewport preview is not represented as satisfying that requirement.
